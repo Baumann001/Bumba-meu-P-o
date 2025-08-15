@@ -2,7 +2,7 @@
 
 $servername = "localhost";
 $username = "root";
-$password = "root";
+$password = "";
 $dbname = "padaria";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
