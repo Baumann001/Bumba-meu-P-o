@@ -1,6 +1,14 @@
- 
- 
- <form method="POST" action="update.php?id=<?php echo $row['id'];?>">
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>update</title>
+</head>
+
+<body>
+
+    <form method="POST" action="update.php?id=<?php echo $row['id'];?>">
 
         <label for="name">Nome:</label>
         <input type="text" name="name" value="<?php echo $row['name'];?>" required>
