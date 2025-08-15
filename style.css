@@ -1,0 +1,77 @@
+body {
+    background: linear-gradient(135deg, #fffbe6 0%, #ffe4b5 100%);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 500px;
+    margin: 40px auto;
+    background: #fff8f0;
+    border-radius: 18px;
+    box-shadow: 0 4px 16px rgba(180, 120, 60, 0.15);
+    padding: 32px;
+    border: 2px solid #f5deb3;
+}
+
+h1 {
+    text-align: center;
+    color: #b8860b;
+    font-size: 2.2em;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+input[type="checkbox"] {
+    accent-color: #d2691e;
+    margin-right: 8px;
+}
+
+input[type="submit"] {
+    background: #d2691e;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 24px;
+    font-size: 1em;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(180, 120, 60, 0.10);
+    transition: background 0.2s;
+}
+
+input[type="submit"]:hover {
+    background: #b8860b;
+}
+
+ul {
+    background: #fffbe6;
+    border-radius: 10px;
+    padding: 16px;
+    margin-top: 10px;
+    box-shadow: 0 1px 4px rgba(180, 120, 60, 0.07);
+}
+
+li {
+    font-size: 1.1em;
+    margin-bottom: 6px;
+    color: #8b5c2b;
+}
+
+p {
+    color: #a0522d;
+    font-size: 1.1em;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 12px;
+    }
+    h1 {
+        font-size: 1.3em;
+    }
+}
