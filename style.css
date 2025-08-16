@@ -75,3 +75,11 @@ p {
         font-size: 1.3em;
     }
 }
+
+#logo{
+    justify-content: center;
+    text-align: center;
+    padding: auto;
+
+    margin-left: 20px;
+}

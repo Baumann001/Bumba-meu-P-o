@@ -17,22 +17,23 @@ if ($result->num_rows > 0) {
 
     while ($row = $result->fetch_assoc()) {
         echo "<tr>
-                <td>{$row['id']}</td>
+                <td>{$row['id_produto']}</td>
                 <td>{$row['nome']}</td>
                 <td>R$ " . number_format($row['preco'], 2, ',', '.') . "</td>
-                <td>{$row['quantidade']}</td>
+                <td>{$row['quantidade_estoque']}</td>
                 <td>
-                    <form method='POST' action='update.php' style='display:inline;'>
-                        <input type='hidden' name='id' value='{$row['id']}'>
+                    <form method='GET' action='update.php' style='display:inline;'>
+                        <input type='hidden' name='id' value='{$row['id_produto']}'>
                         <button type='submit'>Editar</button>
                     </form>
-                    <form method='POST' action='delete.php' style='display:inline;' onsubmit=\"return confirm('Tem certeza que deseja excluir?');\">
-                        <input type='hidden' name='id' value='{$row['id']}'>
+                    <form method='GET' action='delete.php' style='display:inline;' onsubmit=\"return confirm('Tem certeza que deseja excluir?');\">
+                        <input type='hidden' name='id' value='{$row['id_produto']}'>
                         <button type='submit'>Excluir</button>
                     </form>
                 </td>
               </tr>";
     }
+
     echo "</table>";
 } else {
     echo "<p>Nenhum produto encontrado.</p>";
