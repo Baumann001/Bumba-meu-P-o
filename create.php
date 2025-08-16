@@ -27,11 +27,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             }
         }
     } else {
-                echo "<div class='error'>Erro: Todos os campos são obrigatórios.</div>";
-            }
-        }
+        echo "<div class='error'>Erro: Todos os campos são obrigatórios.</div>";
     }
+}
 ?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>

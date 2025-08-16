@@ -81,3 +81,27 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     </main>
 </body>
 </html>
+        <form method="POST" action="create_usuario.php">
+            <label>Nome:</label>
+            <input type="text" name="nome" required><br><br>
+
+            <label>Email:</label>
+            <input type="email" name="email" required><br><br>
+
+            <label>Senha:</label>
+            <input type="password" name="senha" required><br><br>
+
+            <label>Telefone:</label>
+            <input type="text" name="telefone"><br><br>
+
+            <label>Endereço:</label>
+            <input type="text" name="endereco"><br><br>
+
+            <label>Data de Contratação:</label>
+            <input type="date" name="data_contratacao" required><br><br>
+
+            <input type="submit" value="Cadastrar Usuário">
+        </form>
+    </main>
+</body>
+</html>
