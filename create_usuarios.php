@@ -37,11 +37,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <form method="POST" action="create.php">
 
-        <label for="name">Nome:</label>
-        <input type="text" name="name" required>
+       <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required><br><br>
 
         <label for="email">Email:</label>
-        <input type="email" name="email" required>
+        <input type="email" id="email" name="email" required><br><br>
 
         <label for="id_usuario">ID Usuário:</label>
         <input type="number" id="id_usuario" name="id_usuario" required><br><br>
@@ -60,8 +60,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         <input type="submit" value="Adicionar">
 
-
-        <input type="submit" value="Adicionar">
 
     </form>
 
