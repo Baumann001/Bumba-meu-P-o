@@ -6,13 +6,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $nome = $_POST['nome'];
     $preco = $_POST['preco'];
     $quantidade = $_POST['quantidade'];
-    $
-
-    
-        
-       
-    
-}
+};
 ?>
 
 <html lang="pt-br">

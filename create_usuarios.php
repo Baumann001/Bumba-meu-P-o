@@ -43,6 +43,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <label for="email">Email:</label>
         <input type="email" name="email" required>
 
+        <label for="id_usuario">ID Usuário:</label>
+        <input type="number" id="id_usuario" name="id_usuario" required><br><br>
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required><br><br>
+
+        <label for="telefone">Telefone:</label>
+        <input type="text" id="telefone" name="telefone"><br><br>
+
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" name="endereco"><br><br>
+
+        <label for="data_contratacao">Data de Contratação:</label>
+        <input type="date" id="data_contratacao" name="data_contratacao"><br><br>
+
+        <input type="submit" value="Adicionar">
+
+
         <input type="submit" value="Adicionar">
 
     </form>
